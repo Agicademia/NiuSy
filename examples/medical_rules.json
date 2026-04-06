@@ -1,0 +1,25 @@
+[
+    {
+        "premises": [
+            "has_fever",
+            "has_cough"
+        ],
+        "conclusion": "LikelyViralInfection",
+        "weight": 0.8
+    },
+    {
+        "premises": [
+            "LikelyViralInfection",
+            "high_risk_patient"
+        ],
+        "conclusion": "Deny",
+        "weight": 1.0
+    },
+    {
+        "premises": [
+            "LikelyViralInfection"
+        ],
+        "conclusion": "Allow",
+        "weight": 0.5
+    }
+]
