@@ -21,7 +21,7 @@
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ### 1. Installation
 ```bash
@@ -60,8 +60,8 @@ print(result)
 
 ---
 
-## 🛡️ License
+## License
 NiuSy is licensed under the Apache License 2.0. See the `LICENSE` file for more details.
 
-## 🤝 Contributing
+## Contributing
 We welcome contributions! Please see `CONTRIBUTING.md` for guidelines.
