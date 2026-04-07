@@ -1,41 +1,41 @@
 [build-system]
-requires = [\"setuptools>=42\", \"wheel\"]
-build-backend = \"setuptools.build_meta\"
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = \"niusy\"
-version = \"0.1.0\"
-description = \"A generic Neuro-Symbolic AI library for probabilistic reasoning and goal alignment.\"
-readme = \"README.md\"
-requires-python = \">=3.9\"
-license = { text = \"Apache-2.0\" }
+name = "niusy"
+version = "0.1.0"
+description = "A generic Neuro-Symbolic AI library for probabilistic reasoning and goal alignment."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
 authors = [
-  { name = \"Vaibhav\", email = \"vaibhav@agicademia.org\" }
+  { name = "Vaibhav", email = "vaibhav@agicademia.org" }
 ]
 classifiers = [
-    \"Programming Language :: Python :: 3\",
-    \"License :: OSI Approved :: Apache Software License\",
-    \"Operating System :: OS Independent\",
-    \"Environment :: Console\",
-    \"Intended Audience :: Science/Research\",
-    \"Topic :: Scientific/Engineering :: Artificial Intelligence\"
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
 dependencies = [
-    \"numpy>=1.20.0\",
-    \"typing_extensions>=4.0.0\"
+    "numpy>=1.20.0",
+    "typing_extensions>=4.0.0"
 ]
 
 [project.optional-dependencies]
 dev = [
-    \"pytest>=7.0.0\",
-    \"black>=22.0.0\",
-    \"flake8>=4.0.0\"
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0"
 ]
 neural = [
-    \"litellm>=1.0.0\",
-    \"openai>=1.0.0\"
+    "litellm>=1.0.0",
+    "openai>=1.0.0"
 ]
 
 [tool.setuptools.packages.find]
-where = [\".\"]
-include = [\"niusy*\"]
+where = ["."]
+include = ["niusy*"]
