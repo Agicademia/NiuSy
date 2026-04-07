@@ -4,10 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "niusy"
-version = "0.1.0"
+version = "0.1.1"
 description = "A generic Neuro-Symbolic AI library for probabilistic reasoning and goal alignment."
 readme = "README.md"
 requires-python = ">=3.9"
+
 license = { text = "Apache-2.0" }
 authors = [
   { name = "Vaibhav", email = "vaibhav@agicademia.org" }

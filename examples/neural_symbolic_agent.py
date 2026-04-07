@@ -3,7 +3,7 @@ from niusy.core.logic import Rule
 from niusy.neural.bridge import ConceptExtractor
 
 def main():
-    # 📚 1. Knowledge Engineer: Define Rules for a "Safe Content" Agent
+    # 1. Knowledge Engineer: Define Rules for a "Safe Content" Agent
     rules = [
         # Explicit content leads to a safety violation
         Rule(premises=['contains_violence'], conclusion_name='SafetyViolation'),
@@ -12,12 +12,13 @@ def main():
         Rule(premises=['SafetyViolation'], conclusion_name='Deny', weight=1.0)
     ]
 
-    # 🤝 2. Neural Bridge: Setup the Concept Extractor
+    # 2. Neural Bridge: Setup the Concept Extractor
     # In a real app, you'd pass a litellm/openai client here.
     bridge = ConceptExtractor()
     
-    # 🤖 3. The NeSy Agent: Combine Neural Perception and Symbolic Reasoning
+    # 3. The NeSy Agent: Combine Neural Perception and Symbolic Reasoning
     agent = ReasoningAgent(rules=rules, name="NiuSafe")
+
 
     # --- SIMULATING A TASK ---
     raw_user_input = "The warrior swung his sword and caused blood to spill everywhere."

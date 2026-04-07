@@ -10,7 +10,8 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
+
 - **Probabilistic Logic Engine**: Handles uncertainty by assigning confidence scores to facts and rules.
 - **Bi-Directional Reasoning**: Supports both Forward Chaining (data-driven) and Backward Chaining (goal-driven) for agentic decision making.
 - **Explainable AI (XAI)**: Generates human-readable "Proof Traces" for every decision.
